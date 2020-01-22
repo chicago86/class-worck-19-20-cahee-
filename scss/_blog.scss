@@ -1,0 +1,93 @@
+.ba-section {
+  padding: 100px 0;
+  &--blog {
+    background: #b07cf7;
+    color: white;
+  }
+}
+
+.ba-section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 90px;
+  margin: 0;
+}
+.ba-section-content {
+  text-align: center;
+  max-width: 570px;
+  margin: 0 auto 70px;
+}
+p {
+  margin: 0 0 20px;
+}
+
+.ba-row {
+  display: flex;
+  margin-left: -30px;
+}
+.ba-col {
+  padding-left: 30px;
+  width: 33.33%;
+  /* width: 100%; */
+  /* width: 50%; */
+}
+
+.ba-post a {
+  color: #fff;
+  text-decoration: none;
+
+  display: block;
+  position: relative;
+}
+.ba-post-date-top span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.ba-post-date-top {
+  border-radius: 5px;
+  background-color: rgba(38, 38, 38, 0.5);
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 900;
+
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.ba-post-title,
+.ba-post-meta {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  /* display: none; */
+  z-index: 2;
+}
+
+.ba-post-title {
+  margin: 0;
+  bottom: 60px;
+}
+.ba-post a img {
+  display: block;
+  width: 100%;
+}
+.ba-post a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #000, transparent);
+
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}

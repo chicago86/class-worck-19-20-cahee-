@@ -1,0 +1,42 @@
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  background: $primery-color;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 25px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  &:hover {
+    background-color: darken($primery-color, 15%);
+    color: #fff;
+  }
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+  &:focus {
+  }
+}
+
+textarea {
+}
