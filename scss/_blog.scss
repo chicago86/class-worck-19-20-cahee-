@@ -1,22 +1,19 @@
 
-
-.ba-row {
-  display: flex;
-  margin-left: -30px;
+.ba-posts{
+  margin-bottom: 20px;
 }
-.ba-col {
-  padding-left: 30px;
-  width: 33.33%;
-  /* width: 100%; */
-  /* width: 50%; */
+.ba-post{
+  margin-bottom: 30px;
 }
-
 .ba-post a {
   color: #fff;
   text-decoration: none;
-
   display: block;
   position: relative;
+  &:hover{
+    color: #fff;
+    opacity: 0.6;
+  }
 }
 .ba-post-date-top span {
   font-size: 30px;
@@ -40,20 +37,22 @@
   left: 30px;
   top: 30px;
 }
-
+.ba-post-meta{
+  font-size: 13px;
+}
 .ba-post-title,
 .ba-post-meta {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
-  right: 30px;
+  bottom: 18px;
+  left: 20px;
+  right: 20px;
   /* display: none; */
   z-index: 2;
 }
 
 .ba-post-title {
   margin: 0;
-  bottom: 60px;
+  bottom: 55px;
 }
 .ba-post a img {
   display: block;
@@ -65,7 +64,6 @@
   width: 100%;
   height: 50%;
   background: linear-gradient(to top, #000, transparent);
-
   position: absolute;
   bottom: 0;
   z-index: 1;

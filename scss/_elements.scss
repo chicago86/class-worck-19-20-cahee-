@@ -25,6 +25,30 @@ button,
     color: #fff;
   }
 }
+.ba-button {
+  &--gallery {
+    background: #5585a2;
+    min-width: 200px;
+    &:hover {
+      background: darken(#5585a2, 15%);
+    }
+  }
+  &--blog {
+    background: #f72b3b;
+    min-width: 200px;
+    &:hover {
+      background: darken(#f72b3b, 15%);
+    }
+  }
+  &--subscribe {
+    background: #96b92c;
+    min-width: 170px;
+    &:hover {
+      background: darken(#96b92c, 15%);
+    }
+  }
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -32,11 +56,24 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
+  height: 55px;
+  padding: 10px 15px;
+  border: 1px solid $text-color;
+  background: white;
+  border-radius: 0px;
+  font-size: 15px;
+  color: $text-color;
+  &::placeholder {
+    color: rgba($text-color, 0.5);
+  }
   transition: color 0.3s ease-in, border-color 0.3s ease-in,
     background-color 0.3s ease-in, opacity 0.3s ease-in;
   &:focus {
+    outline: none;
+    border-color: #96b92c;
   }
 }
 
 textarea {
+  height: auto;
 }
